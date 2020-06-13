@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      .player{
+        position:absolute;
+        height:40px;
+        width:35px;
+        image-rendering:pixelated;
+        image-rendering:crisp-edges;
+        user-select: none;
+        z-index: 1;
+      }
+      #cursor{
+        position:absolute;
+        height:25px;
+        width:25px;
+        image-rendering:pixelated;
+        image-rendering:crisp-edges;
+        user-select: none;
+        z-index: 3;
+      }
+      #conduit{
+        position:absolute;
+        height:50px;
+        width:15px;
+        image-rendering:pixelated;
+        image-rendering:crisp-edges;
+        user-select: none;
+      }
+      .tile{
+        position:absolute;
+        height:40px;
+        width:40px;
+        image-rendering:pixelated;
+        image-rendering:crisp-edges;
+        transform-origin: center;
+        user-select: none;
+        display: none;
+        z-index: -1;
+      }
+      .square {
+        position:absolute;
+        height: 60px;
+        width: 60px;
+        background-color: #DDD;
+        opacity: 0.9;
+        z-index: 2;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+
+    <img src="mageSprites/mage-front.png" id="player" class="player">
+
+    <img src="tiles/selector.png" id="selector" class="tile">
+    <img src="tiles/multiSelector.png" id="multiSelector" class="tile">
+
+    <img src="tiles/blueTile.png" id="blueTile" class="tile">
+    <img src="tiles/yellowTile.png" id="yellowTile" class="tile">
+    <img src="tiles/redTile.png" id="redTile" class="tile">
+    <img src="tiles/purpleTile.png" id="purpleTile" class="tile">
+    <img src="tiles/turqouiseTile.png" id="turqouiseTile" class="tile">
+    <img src="tiles/grayTile.png" id="grayTile" class="tile">
+    <img src="tiles/whiteTile.png" id="whiteTile" class="tile">
+    <img src="tiles/greenTile.png" id="greenTile" class="tile">
+
+    <div id="menu" class="square"></div>
+
+    <div id="multiSelectorChildren"></div>
+
+
+    <div>
+      <canvas id="myCanvas" width="1500" height="1000"></canvas>
+    </div>
+
+    <script src="constants.js"></script>
+    <script src="helperFunctions.js"></script>
+    <script src="globals.js"></script>
+    <script src="spells.js"></script>
+    <script src="vectors.js"></script>
+    <script src="objects.js"></script>
+    <script src="grid.js"></script>
+
+  </body>
+</html>
