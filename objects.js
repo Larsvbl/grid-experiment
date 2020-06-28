@@ -271,3 +271,17 @@ function TileMenu(object, width, selected){
     }
   }
 }
+
+function MagicConduit(object, x, y){
+  this.object = object
+  this.x = x
+  this.y = y
+
+  this.update = function(){
+
+
+
+  }
+
+
+}
